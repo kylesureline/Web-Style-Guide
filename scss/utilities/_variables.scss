@@ -6,7 +6,6 @@
 $white: #fff;
 
 $color-primary: #4eddb9;
-$color-secondary: #47d8fc;
 
 $color-text: #757575;
 $color-text-dark: darken($color-text, 10%);
@@ -14,7 +13,7 @@ $color-text-light: lighten($color-text, 10%);
 
 // Theme colors
 $btn-themes: (
-  'default': $color-secondary,
+  'default': #47d8fc,
   'success': #58c577,
     'error': #e0696f,
   'warning': #fd6c4c,
@@ -22,13 +21,13 @@ $btn-themes: (
 );
 
 $grid-themes: (
-  '12': #75e5cb,
-   '6': #37a1c3,
-   '4': #73e2fd,
-   '3': #d9a9eb,
-   '5': #7dd496,
-   '7': #e99499,
-   '8': #fd947a,
+  '12': adjust-hue(map-get($btn-themes, 'default'), 10deg),
+   '6': darken(map-get($btn-themes, 'default'), 10%),
+   '4': lighten(map-get($btn-themes, 'default'), 10%),
+   '3': lighten(map-get($btn-themes, 'info'), 10%),
+   '5': lighten(map-get($btn-themes, 'success'), 10%),
+   '7': lighten(map-get($btn-themes, 'error'), 10%),
+   '8': lighten(map-get($btn-themes, 'warning'), 10%),
 );
 
 // Layout
