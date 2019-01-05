@@ -337,4 +337,17 @@ template {
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  line-height: 1.5;
+}
+
 /*# sourceMappingURL=styles.css.map */

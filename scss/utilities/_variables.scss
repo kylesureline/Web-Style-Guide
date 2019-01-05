@@ -11,6 +11,9 @@ $color-text: #757575;
 $color-text-dark: darken($color-text, 10%);
 $color-text-light: lighten($color-text, 10%);
 
+// Fonts
+$font-stack: "Trebuchet MS", Helvetica, sans-serif;
+
 // Theme colors
 $btn-themes: (
   'default': #47d8fc,
