@@ -2,6 +2,35 @@
 //  Variables
 // ======================================
 
+// Colors
+$white: #fff;
+
+$color-primary: #4eddb9;
+$color-secondary: #47d8fc;
+
+$color-text: #757575;
+$color-text-dark: darken($color-text, 10%);
+$color-text-light: lighten($color-text, 10%);
+
+// Theme colors
+$btn-themes: (
+  'default': $color-secondary,
+  'success': #58c577,
+    'error': #e0696f,
+  'warning': #fd6c4c,
+     'info': #8770b9,
+);
+
+$grid-themes: (
+  '12': #75e5cb,
+   '6': #37a1c3,
+   '4': #73e2fd,
+   '3': #d9a9eb,
+   '5': #7dd496,
+   '7': #e99499,
+   '8': #fd947a,
+);
+
 // Breakpoints
 $breakpoints: (
   'xs': 575px,
