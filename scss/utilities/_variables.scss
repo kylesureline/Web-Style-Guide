@@ -31,6 +31,10 @@ $grid-themes: (
    '8': #fd947a,
 );
 
+// Layout
+$max-width: 1400px;
+$gutter: 10px;
+
 // Breakpoints
 $breakpoints: (
   'xs': 575px,
