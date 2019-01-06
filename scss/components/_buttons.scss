@@ -1,3 +1,22 @@
 // ======================================
 //  Buttons
 // ======================================
+
+.btn--default,
+.btn--success,
+.btn--error,
+.btn--warning,
+.btn--info {
+  width: 100%;
+  padding: 1em;
+  margin: .5em 0;
+  text-transform: uppercase;
+  border-radius: 6px;
+  color: $white;
+}
+
+@each $theme, $color in $btn-themes {
+  .btn--#{$theme} {
+    background-color: $color;
+  }
+}

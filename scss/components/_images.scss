@@ -2,7 +2,14 @@
 //  Images
 // ======================================
 
-.img--logo {
+.img--logo,
+.img--avatar {
   display: block;
   margin: 0 auto;
+}
+
+.img--frame {
+  width: 100%;
+  border: 1px solid $color-text-light;
+  padding: 1em;
 }
