@@ -2,6 +2,11 @@
 //  Mixins
 // =========================================
 
+// Debug
+@mixin debug {
+  border: 1px solid red;
+}
+
 // Center containers
 @mixin center($w) {
   width: $w;

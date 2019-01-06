@@ -5,3 +5,8 @@
 .container {
   padding: 2em;
 }
+
+.grid__row {
+  padding: 1em 0;
+  @include debug;
+}

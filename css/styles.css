@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -339,15 +340,46 @@ template {
 
 * {
   box-sizing: border-box;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 p {
   line-height: 1.5;
 }
 
+.nav {
+  list-style: none;
+  padding: 0;
+  margin: 2em 0;
+}
+
+.nav__item {
+  text-align: center;
+}
+.nav__item a {
+  color: #5c5c5c;
+  text-decoration: none;
+  display: block;
+  border-radius: 4px;
+  padding: 1em;
+}
+.nav__item a:hover {
+  background-color: #4eddb9;
+  color: #fff;
+}
+
+.img--logo {
+  display: block;
+  margin: 0 auto;
+}
+
 .container {
   padding: 2em;
+}
+
+.grid__row {
+  padding: 1em 0;
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=styles.css.map */
