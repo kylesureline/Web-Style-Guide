@@ -24,13 +24,13 @@ $btn-themes: (
 );
 
 $grid-themes: (
-  '12': adjust-hue(map-get($btn-themes, 'default'), 10deg),
-   '6': darken(map-get($btn-themes, 'default'), 10%),
-   '4': lighten(map-get($btn-themes, 'default'), 10%),
-   '3': lighten(map-get($btn-themes, 'info'), 10%),
-   '5': lighten(map-get($btn-themes, 'success'), 10%),
-   '7': lighten(map-get($btn-themes, 'error'), 10%),
-   '8': lighten(map-get($btn-themes, 'warning'), 10%),
+  12: lighten(adjust-hue(map-get($btn-themes, 'default'), -25deg), 10%),
+   6: darken(map-get($btn-themes, 'default'), 10%),
+   4: lighten(map-get($btn-themes, 'default'), 10%),
+   3: lighten(map-get($btn-themes, 'info'), 10%),
+   5: lighten(map-get($btn-themes, 'success'), 10%),
+   7: lighten(map-get($btn-themes, 'error'), 10%),
+   8: lighten(map-get($btn-themes, 'warning'), 10%),
 );
 
 // Layout

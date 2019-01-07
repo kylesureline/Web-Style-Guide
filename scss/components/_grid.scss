@@ -7,15 +7,27 @@
 }
 
 .grid__row {
-  padding: 1em 0;
-  margin: 1em 0;
-  @include debug;
+  margin: 3em 0;
+  // @include debug;
+}
+
+.grid__row:first-child {
+  margin-top: 0;
+}
+
+.grid__row:last-child {
+  margin-bottom: 0;
 }
 
 .card {
   padding: 0 1em;
 }
 
-// @each $theme, $color in $grid-themes {
-//
-// }
+@each $theme, $color in $grid-themes {
+  .grid__col--#{$theme}.theme__colors {
+    background-color: $color;
+    padding: 1em;
+    border-radius: 6px;
+    margin: .5em 0;
+  }
+}

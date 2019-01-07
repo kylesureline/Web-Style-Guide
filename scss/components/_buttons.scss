@@ -13,6 +13,10 @@
   text-transform: uppercase;
   border-radius: 6px;
   color: $white;
+  &:focus {
+    outline-width: 0;
+    opacity: .8;
+  }
 }
 
 @each $theme, $color in $btn-themes {
