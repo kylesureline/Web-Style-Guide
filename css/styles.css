@@ -341,7 +341,13 @@ template {
 * {
   box-sizing: border-box;
   font-family: "Open Sans", Helvetica, sans-serif;
-  color: #757575;
+  border: none;
+  background-color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 p {
@@ -349,7 +355,6 @@ p {
 }
 
 .nav {
-  list-style: none;
   padding: 0;
   margin: 2em 0;
 }
