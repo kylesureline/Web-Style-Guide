@@ -31,6 +31,7 @@ $grid-themes: (
    5: lighten(map-get($btn-themes, 'success'), 10%),
    7: lighten(map-get($btn-themes, 'error'), 10%),
    8: lighten(map-get($btn-themes, 'warning'), 10%),
+   9: lighten(map-get($btn-themes, 'warning'), 20%),
 );
 
 // Layout
