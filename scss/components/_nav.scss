@@ -5,6 +5,9 @@
 .nav {
   padding: 0;
   margin: 2em 0;
+  @media (min-width: map-get($breakpoints, 'med')) {
+    display: flex;
+  }
 }
 
 .nav__item {

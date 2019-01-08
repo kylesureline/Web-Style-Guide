@@ -343,6 +343,7 @@ template {
   font-family: "Open Sans", Helvetica, sans-serif;
   border: none;
   background-color: #fff;
+  color: #757575;
 }
 
 ul {
@@ -357,6 +358,11 @@ p {
 .nav {
   padding: 0;
   margin: 2em 0;
+}
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
 }
 
 .nav__item {
@@ -395,6 +401,15 @@ p {
   outline-width: 0;
   opacity: 0.8;
 }
+@media (min-width: 768px) {
+  .btn--default,
+.btn--success,
+.btn--error,
+.btn--warning,
+.btn--info {
+    flex: 0 1 15%;
+  }
+}
 
 .btn--default {
   background-color: #47d8fc;
@@ -414,6 +429,11 @@ p {
 
 .btn--info {
   background-color: #8770b9;
+}
+
+.img--logo,
+.img--avatar {
+  padding: 1em 0;
 }
 
 .img--logo,
@@ -482,10 +502,28 @@ p {
 
 .container {
   padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 70%;
+  }
 }
 
 .grid__row {
-  margin: 3em 0;
+  margin: 1em 0;
 }
 
 .grid__row:first-child {
@@ -506,12 +544,22 @@ p {
   border-radius: 6px;
   margin: 0.5em 0;
 }
+@media (min-width: 768px) {
+  .grid__col--12 {
+    display: flex;
+  }
+}
 
 .grid__col--6.theme__colors {
   background-color: #15cdfb;
   padding: 1em;
   border-radius: 6px;
   margin: 0.5em 0;
+}
+@media (min-width: 768px) {
+  .grid__col--6 {
+    display: flex;
+  }
 }
 
 .grid__col--4.theme__colors {
@@ -520,12 +568,22 @@ p {
   border-radius: 6px;
   margin: 0.5em 0;
 }
+@media (min-width: 768px) {
+  .grid__col--4 {
+    display: flex;
+  }
+}
 
 .grid__col--3.theme__colors {
   background-color: #a492ca;
   padding: 1em;
   border-radius: 6px;
   margin: 0.5em 0;
+}
+@media (min-width: 768px) {
+  .grid__col--3 {
+    display: flex;
+  }
 }
 
 .grid__col--5.theme__colors {
@@ -534,6 +592,11 @@ p {
   border-radius: 6px;
   margin: 0.5em 0;
 }
+@media (min-width: 768px) {
+  .grid__col--5 {
+    display: flex;
+  }
+}
 
 .grid__col--7.theme__colors {
   background-color: #e99398;
@@ -541,12 +604,22 @@ p {
   border-radius: 6px;
   margin: 0.5em 0;
 }
+@media (min-width: 768px) {
+  .grid__col--7 {
+    display: flex;
+  }
+}
 
 .grid__col--8.theme__colors {
   background-color: #fe957e;
   padding: 1em;
   border-radius: 6px;
   margin: 0.5em 0;
+}
+@media (min-width: 768px) {
+  .grid__col--8 {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -17,6 +17,9 @@
     outline-width: 0;
     opacity: .8;
   }
+  @media (min-width: map-get($breakpoints, 'med')) {
+    flex: 0 1 15%;
+  }
 }
 
 @each $theme, $color in $btn-themes {
