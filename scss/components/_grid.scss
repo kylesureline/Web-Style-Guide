@@ -9,6 +9,7 @@
   @include mq('sm') {
     margin: 0 auto;
   }
+  color: $color-text;
 }
 
 .grid__row {

@@ -343,7 +343,6 @@ template {
   font-family: "Open Sans", Helvetica, sans-serif;
   border: none;
   background-color: #fff;
-  color: #757575;
 }
 
 ul {
@@ -509,6 +508,7 @@ p {
   max-width: 1400px;
   display: flex;
   flex-direction: column;
+  color: #757575;
 }
 @media (min-width: 576px) {
   .container {
