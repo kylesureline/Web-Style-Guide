@@ -4,6 +4,11 @@
 
 .form {
   padding: 0 .5em;
+  width: 100%;
+}
+
+.form legend {
+  margin: 1.33em 0;
 }
 
 .form__label--hidden {

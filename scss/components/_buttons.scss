@@ -7,7 +7,6 @@
 .btn--error,
 .btn--warning,
 .btn--info {
-  width: 100%;
   padding: 1em;
   margin: .5em 0;
   text-transform: uppercase;
@@ -17,7 +16,7 @@
     outline-width: 0;
     opacity: .8;
   }
-  @media (min-width: map-get($breakpoints, 'med')) {
+  @include mq('lg') {
     flex: 0 1 15%;
   }
 }

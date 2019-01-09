@@ -4,28 +4,17 @@
 
 .container {
   padding: 2em;
-  display: flex;
-  flex-direction: column;
-  @media (min-width: map-get($breakpoints, 'sm')) {
-    width: 90%;
+  max-width: $max-width;
+  @include flexy($dir: column);
+  @include mq('sm') {
     margin: 0 auto;
-    padding: 1em;
-  }
-  @media (min-width: map-get($breakpoints, 'med')) {
-    width: 80%;
-    padding: 0;
-  }
-  @media (min-width: map-get($breakpoints, 'lg')) {
-    width: 70%;
   }
 }
 
 .grid__row {
   margin: 1em 0;
-  @include debug;
-  @media (min-width: map-get($breakpoints, 'med')) {
-    display: flex;
-    justify-content: space-around;
+  @include mq('med') {
+    @include flexy($just: space-around);
   }
 }
 
@@ -43,36 +32,22 @@
 
 @each $theme, $color in $grid-themes {
   .grid__col--#{$theme} {
+    @include flexy($dir: column);
     padding: 1em;
     border-radius: 6px;
     margin: .5em 0;
     &.theme__colors {
       background-color: $color;
     }
-    @media (min-width: map-get($breakpoints, 'med')) {
-      display: flex;
+    @include mq('sm') {
+      flex: 0 1;
+      flex-direction: row;
       justify-content: space-around;
-      flex: 0 1 (($theme / 12) * 100%);
+      // align-items: center;
+    }
+    @include mq('med') {
+      margin: $gutter;
+      flex-basis: (($theme / 12) * 100%);
     }
   }
 }
-//
-// .grid__col--2,
-// .grid__col--3,
-// .grid__col--4,
-// .grid__col--5,
-// .grid__col--6,
-// .grid__col--7,
-// .grid__col--8,
-// .grid__col--9,
-// .grid__col--10,
-// .grid__col--11,
-// .grid__col--12 {
-//   padding: 1em;
-//   border-radius: 6px;
-//   margin: .5em 0;
-//   @media (min-width: map-get($breakpoints, 'med')) {
-//     display: flex;
-//     justify-content: space-around;
-//   }
-// }
